@@ -10,3 +10,8 @@ variable "CLIENT_PUB_KEY" {}
 variable "INSTANCE_TYPE" {}
 variable "env_prefix" {}
 variable "ami_id" {}
+variable "pri_sub_3_a" {}
+variable "pri_sub_4_b" {}
+variable "subnet_ids"   {}
+variable "source_security_group" {}
+variable "rds_password" {}

@@ -30,9 +30,9 @@ resource "aws_db_instance"  "this" {
    allocated_storage      =  10
    engine                 = "mysql"
    instance_class         = "db.t3.micro"
-   name                   = "mydb"
+   name                   =  "mydb"
    username               = "admin"
-   password               = "supersecretpassword"
+   password               = "var.rds_password"
    multi_az                = true 
    db_subnet_group_name    = aws_db_subnet_group.this
    vpc_security_group_ids  = [aws_security_group.this.name] 
